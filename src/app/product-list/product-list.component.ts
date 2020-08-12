@@ -7,6 +7,7 @@ import { ITS_JUST_ANGULAR } from '@angular/core/src/r3_symbols';
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
+  
 })
 export class ProductListComponent {
   products = products;
@@ -16,7 +17,7 @@ export class ProductListComponent {
   }
   analyticsTrack(event, pageName, contentName, btnName, dataObject){
     console.log(event, pageName, contentName, btnName, dataObject);
-    /this.analyticsTrack("event","pagename","contentName","btnName","dataObject");
+   //bob.analyticsTrack("event","pagename","contentName","btnName","dataObject");
   }
 }
 
