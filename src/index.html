@@ -17,11 +17,11 @@
     <script type="application/javascript">
 
 console.log("OSB Analytics")
-var analyticsTrack = function(event, pageName, contentName, btnName,dataObject){
+window.analyticsTrack = function(event, pageName, contentName, btnName,dataObject){
   console.log(event, pageName, contentName, btnName,dataObject)
  
 }
-//analyticsTrack();
+analyticsTrack();
 
     </script>
     <app-root></app-root>

@@ -15,7 +15,8 @@ export class ProductListComponent {
     window.alert('The product has been shared!');
   }
   analyticsTrack(event, pageName, contentName, btnName, dataObject){
-    window.analyticsTrack(event, pageName, contentName, btnName, dataObject);
+    console.log(event, pageName, contentName, btnName, dataObject);
+    /this.analyticsTrack("event","pagename","contentName","btnName","dataObject");
   }
 }
 
