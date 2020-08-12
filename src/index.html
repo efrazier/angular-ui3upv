@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <meta charset="utf-8" />
     <title>Angular Getting Started</title>
     <base href="/" />
@@ -13,6 +14,16 @@
     />
   </head>
   <body>
+    <script type="application/javascript">
+
+console.log("OSB Analytics")
+var analyticsTrack = function(event, pageName, contentName, btnName,dataObject){
+  console.log(event, pageName, contentName, btnName,dataObject)
+ 
+}
+//analyticsTrack();
+
+    </script>
     <app-root></app-root>
   </body>
 </html>

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { products } from '../products';
+import { ITS_JUST_ANGULAR } from '@angular/core/src/r3_symbols';
 
 @Component({
   selector: 'app-product-list',
@@ -12,6 +13,9 @@ export class ProductListComponent {
 
   share() {
     window.alert('The product has been shared!');
+  }
+  analyticsTrack(event, pageName, contentName, btnName, dataObject){
+    window.analyticsTrack(event, pageName, contentName, btnName, dataObject);
   }
 }
 
