@@ -13,7 +13,7 @@ import { WINDOW } from "../window.service";
 })
 export class ProductListComponent {
   constructor(@Inject(WINDOW) public window: Window) {
-    console.log(window);
+    //console.log(window);
     //window.analyticsTrack("event","pagename","contentName","btnName","dataObject");
   }
   products = products;
