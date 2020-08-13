@@ -12,6 +12,7 @@ import { WINDOW_PROVIDERS } from './window.service'
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
     ])

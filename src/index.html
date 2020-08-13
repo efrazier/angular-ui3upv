@@ -1,3 +1,4 @@
+<hello [window]="window"></hello>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,19 +13,24 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+   
+   
+
   </head>
   <body>
-    <script type="application/javascript">
+   
 
+
+    <app-root></app-root>
+
+<script type="application/javascript">
 console.log("OSB Analytics")
 window.analyticsTrack = function(event, pageName, contentName, btnName,dataObject){
   console.log(event, pageName, contentName, btnName,dataObject)
  
 }
-analyticsTrack();
+</script>
 
-    </script>
-    <app-root></app-root>
   </body>
 </html>
 

@@ -1,11 +1,22 @@
-import { Component } from '@angular/core';
+import { Component,Inject } from '@angular/core';
+import { WINDOW } from "./window.service";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: [ './app.component.css' ]
 })
-export class AppComponent  {}
+export class AppComponent  {
+
+constructor(@Inject(WINDOW) public window: Window) {
+    //console.log(window);
+    //window.analyticsTrack();
+  }
+
+
+}
+
+
 
 
 /*

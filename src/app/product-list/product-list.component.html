@@ -12,7 +12,7 @@
     Description: {{ product.description }}
   </p>
 
-  <button (click)='analyticsTrack("event", "pageName", "contentName", "btnName", "dataObject")'>
+  <button class="bob" (click)='analyticsTrack($event, "pageName", "contentName", "btnName", "dataObject")'>
     Share
   </button>
 
