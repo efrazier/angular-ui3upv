@@ -1,5 +1,7 @@
 import { Component,Inject } from '@angular/core';
 import { WINDOW } from "./window.service";
+import { GoogleTagManagerService } from 'angular-google-tag-manager';
+
 
 @Component({
   selector: 'app-root',
@@ -8,10 +10,20 @@ import { WINDOW } from "./window.service";
 })
 export class AppComponent  {
 
-constructor(@Inject(WINDOW) public window: Window) {
+constructor(@Inject(WINDOW) public window: Window,private gtmService: GoogleTagManagerService,) {
     //console.log(window);
     //window.analyticsTrack();
+       
+  
   }
+
+  public analyticsTrack(event, pageName, contentName, btnName, dataObject){
+    console.log(event, pageName, contentName, btnName, dataObject);
+  
+   //window.analyticsTrack("event","pagename","contentName","btnName","dataObject");
+  }
+
+
 
 
 }

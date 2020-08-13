@@ -22,10 +22,17 @@ import { WINDOW_PROVIDERS } from './window.service'
     TopBarComponent,
     ProductListComponent
   ],
-  providers: [WINDOW_PROVIDERS],
+  providers: [WINDOW_PROVIDERS,{provide: 'googleTagManagerId',  useValue: "GTM-F2KF"},
+  { provide: 'browserwindow', useValue: window }
+  ],
   bootstrap: [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule { 
+
+
+
+
+}
 
 
 /*
